@@ -10,11 +10,11 @@ export default function NavBar() {
 
         <Link to='/educacion'  className='hover:text-white text-xl'>Educación</Link>
 
-        <Link to='/experiencia'  className='hover:text-white text-xl'>Experiencia</Link>
-
         <Link to='/proyectos'  className='hover:text-white text-xl'>Proyectos</Link>
-        
+
         <Link to='/competencias'  className='hover:text-white text-xl'>Competencias</Link>
+        
+        <Link to='/experiencia'  className='hover:text-white text-xl'>Experiencia</Link>
 
     </header>
 }

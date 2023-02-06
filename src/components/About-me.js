@@ -1,6 +1,6 @@
-import { avatar } from "../img"
-import { FaLinkedin } from 'react-icons/fa';
-import { FaGithubSquare } from 'react-icons/fa';
+import { avatar } from '../img'
+import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import {SiGmail} from 'react-icons/si';
 
 function AboutMe() {
 
@@ -9,8 +9,8 @@ function AboutMe() {
         <div className='flex flex-col content-center w-full'>
             <h1 className='font-bold text-5xl text-white mt-4'>Federico Alejandro</h1>
             <h3 className='mt-2'>Full Stack Web Developer Jr</h3>
-            <div className="flex justify-between">
-                <div className="flex flex-col justify-start content-center mt-20 text-lg">
+            <div className='flex justify-between'>
+                <div className='flex flex-col justify-start content-center mt-20 text-lg'>
                     <p>¡Bienvenidos a mi portfolio!. Soy un Desarrollador Full Stack Junior,</p>
                     <p>en constante aprendizaje, descubriendo e incorporando nuevas</p>
                     <p>tecnologías y trabajando día a día para mejorar mis</p>
@@ -22,11 +22,11 @@ function AboutMe() {
                     <p>Busco una oportunidad para comenzar a volcar mis conocimientos técnicos
                         y seguir evolucionando.</p>
                     <p><strong>Te invito a que navegues por esta web para conocerme un poco mas.</strong></p>
-                    <div className="flex flex-row gap-10 mt-20 ">
+                    <div className='flex flex-row gap-10 mt-20 '>
                         <span>
                             <a className='flex items-center justify-center gap-4 hover:text-white'
                                 href='https://www.linkedin.com/in/federico-alejandro/'
-                                target='_blank' rel="noreferrer"
+                                target='_blank' rel='noreferrer'
                             >
                                 <FaLinkedin size='1.5rem' />
                                 Contact me
@@ -35,17 +35,24 @@ function AboutMe() {
                         <span>
                             <a className='flex items-center justify-center gap-4 hover:text-white'
                                 href='https://github.com/fede-alejandro'
-                                target='_blank' rel="noreferrer"
+                                target='_blank' rel='noreferrer'
                             >
                                 <FaGithubSquare size='1.5rem' />
                                 Follow me
                             </a>
                         </span>
+                        <span>
+                            <a className='flex items-center justify-center gap-4 hover:text-white' 
+                            href='mailto:fede.alejandro87@gmail.com' target='_blank' rel='noreferrer'>
+                            <SiGmail size='1.5rem' />
+                            Contacto</a>
+                        </span>
                     </div>
                 </div>
-                <div className='flex justify-end mr-36 '>
-                    <img src={avatar} alt='avatar' className="h-96" />
+                <div className='flex justify-end mr-36'>
+                    <img src={avatar} alt='avatar' className='h-96' />
                 </div>
+
             </div>
         </div>
     </main>

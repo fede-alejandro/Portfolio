@@ -29,7 +29,7 @@ function AboutMe() {
                                 target='_blank' rel='noreferrer'
                             >
                                 <FaLinkedin size='1.5rem' />
-                                Contact me
+                                LinkedIn
                             </a>
                         </span>
                         <span>
@@ -38,7 +38,7 @@ function AboutMe() {
                                 target='_blank' rel='noreferrer'
                             >
                                 <FaGithubSquare size='1.5rem' />
-                                Follow me
+                                GitHub
                             </a>
                         </span>
                         <span>

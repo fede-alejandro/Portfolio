@@ -27,7 +27,7 @@ function Proyectos() {
             <div className='flex items-center'>
                 <img src={blackjack} alt='' className='h-36 rounded-md' />
             </div>
-            <div className='flex flex-col content-center justify-center'>
+            <div className='flex flex-col justify-start'>
                 <h2 className='font-bold text-2xl'>BLACKJACK</h2>
                 <p>Juego de naipes en el que gana quien hace veintiún puntos o se queda más cerca de ellos sin sobrepasarlos.</p>
                 <p>Tecnologías: HTML5 - CSS3 - JavaScript</p>

@@ -6,15 +6,15 @@ function Proyectos() {
 
 
     return <main className='flex flex-col items-center h-full w-full p-10 text-[#c6d6dd]'>
-        <div className='flex border-2 border-blue-400 rounded-md p-4 m-4 w-[60rem] gap-4'>
+        <div className='flex border-2 border-[#c6d6dd] rounded-md p-4 m-4 w-[60rem] gap-4'>
             <div className='flex items-center'>
-                <img src={LOGO} alt='logo' className='h-40' />
+                <img src={LOGO} alt='logo' className='h-34' />
             </div>
             <div className='flex flex-col content-center'>
                 <h2 className='font-bold text-2xl'>COMO LO RECICLO </h2>
                 <p>Una aplicación para que los usuarios donen artículos que ya no utilizan y les den una
-                    segunda vida.</p>
-                <p>Al registrarse pueden publicarlos, con imágenes, recibir mensajes de
+                    segunda vida.
+                Al registrarse pueden realizar publicaciones, recibir mensajes de
                     interesados y decidir a quién donarlos.</p>
                 <p> También contiene información sobre reciclaje y
                     un podcasts de Spotify</p>
@@ -23,9 +23,9 @@ function Proyectos() {
                 <a href='https://github.com/fede-alejandro/como-lo-reciclo' target='_blank' rel='noreferrer' className='pt-2'><FaGithubSquare size='1.5rem' /></a>
             </div>
         </div>
-        <div className='flex  border-2 border-blue-400 rounded-md p-4 m-4 w-[60rem] gap-4'>
+        <div className='flex  border-2 border-[#c6d6dd] rounded-md p-4 m-4 w-[60rem] gap-4'>
             <div className='flex items-center'>
-                <img src={blackjack} alt='' className='h-40' />
+                <img src={blackjack} alt='' className='h-36 rounded-md' />
             </div>
             <div className='flex flex-col content-center justify-center'>
                 <h2 className='font-bold text-2xl'>BLACKJACK</h2>
@@ -34,9 +34,9 @@ function Proyectos() {
                 <a href='https://github.com/fede-alejandro/Blackjack' target='_blank' rel='noreferrer' className='pt-2'><FaGithubSquare size='1.5rem' /></a>
             </div>
         </div>
-        <div className='flex  border-2 border-blue-400 rounded-md p-4 m-4 w-[60rem] gap-4 '>
+        <div className='flex  border-2 border-[#c6d6dd] rounded-md p-4 m-4 w-[60rem] gap-4 '>
             <div className='flex items-center'>
-                <img src={todoList} alt='' className='h-40' />
+                <img src={todoList} alt='' className='h-36 rounded-md' />
             </div>
             <div className='flex flex-col content-center justify-center mb-2'>
                 <h2 className='font-bold text-2xl'>AGENDA DE TAREAS</h2>

@@ -1,6 +1,6 @@
 import { avatar } from '../img'
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
-import {SiGmail} from 'react-icons/si';
+import { SiGmail } from 'react-icons/si';
 
 function AboutMe() {
 
@@ -42,10 +42,10 @@ function AboutMe() {
                             </a>
                         </span>
                         <span>
-                            <a className='flex items-center justify-center gap-4 hover:text-white' 
-                            href='mailto:fede.alejandro87@gmail.com' target='_blank' rel='noreferrer'>
-                            <SiGmail size='1.5rem' />
-                            Contacto</a>
+                            <a className='flex items-center justify-center gap-4 hover:text-white'
+                                href='mailto:fede.alejandro87@gmail.com' target='_blank' rel='noreferrer'>
+                                <SiGmail size='1.5rem' />
+                                Contacto</a>
                         </span>
                     </div>
                 </div>

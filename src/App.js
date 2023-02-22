@@ -4,7 +4,6 @@ import Educacion from './components/Educacion';
 import Experiencia from './components/Experiencia';
 import Proyectos from './components/Proyectos';
 import Competencias from './components/Competencias';
-// import Footer from './components/Footer';
 import AboutMe from './components/About-me';
 
 

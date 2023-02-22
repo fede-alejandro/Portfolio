@@ -5,8 +5,8 @@ function Proyectos() {
 
 
 
-    return <main className='flex flex-col items-center h-full w-full p-10 text-[#c6d6dd]'>
-        <div className='flex border-2 border-[#c6d6dd] rounded-md p-4 m-4 w-[60rem] gap-4'>
+    return <main className='flex flex-col items-center w-[100%] p-10 text-[#c6d6dd]'>
+        <div className='flex flex-col items-center md:flex-row border-2 border-[#c6d6dd] rounded-md p-4 m-4 gap-4 w-[75%]'>
             <div className='flex items-center'>
                 <img src={LOGO} alt='logo' className='h-34' />
             </div>
@@ -23,22 +23,22 @@ function Proyectos() {
                 <a href='https://github.com/fede-alejandro/como-lo-reciclo' target='_blank' rel='noreferrer' className='pt-2'><FaGithubSquare size='1.5rem' /></a>
             </div>
         </div>
-        <div className='flex  border-2 border-[#c6d6dd] rounded-md p-4 m-4 w-[60rem] gap-4'>
+        <div className='flex flex-col items-center md:flex-row border-2 border-[#c6d6dd] rounded-md p-4 m-4 w-[75%] gap-4'>
             <div className='flex items-center'>
-                <img src={blackjack} alt='' className='h-36 rounded-md' />
+                <img src={blackjack} alt='' className='h-32 rounded-md lg:ml-2 h:36' />
             </div>
-            <div className='flex flex-col justify-start'>
+            <div className='flex flex-col justify-start ml-6'>
                 <h2 className='font-bold text-2xl'>BLACKJACK</h2>
                 <p>Juego de naipes en el que gana quien hace veintiún puntos o se queda más cerca de ellos sin sobrepasarlos.</p>
                 <p>Tecnologías: HTML5 - CSS3 - JavaScript</p>
                 <a href='https://github.com/fede-alejandro/Blackjack' target='_blank' rel='noreferrer' className='pt-2'><FaGithubSquare size='1.5rem' /></a>
             </div>
         </div>
-        <div className='flex  border-2 border-[#c6d6dd] rounded-md p-4 m-4 w-[60rem] gap-4 '>
+        <div className='flex flex-col items-center md:flex-row border-2 border-[#c6d6dd] rounded-md p-4 m-4 w-[75%] gap-4 '>
             <div className='flex items-center'>
-                <img src={todoList} alt='' className='h-36 rounded-md' />
+                <img src={todoList} alt='' className='h-32 rounded-md lg:ml-2 h:36' />
             </div>
-            <div className='flex flex-col content-center justify-center mb-2'>
+            <div className='flex flex-col content-center justify-center ml-6 mb-2'>
                 <h2 className='font-bold text-2xl'>AGENDA DE TAREAS</h2>
                 <p>Desarrollo de un organizador de tareas. Contiene un página de registro, login y settings
                     de perfil.</p>

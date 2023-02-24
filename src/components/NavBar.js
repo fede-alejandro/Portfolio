@@ -7,6 +7,13 @@ export default function NavBar() {
     const [toggleButton, setToggleButton] = useState('menu')
 
     const handleToggleMenu = () => setToggleButton(toggleButton === 'menu' ? 'close' : 'menu')
+    
+    const menuOpen = () => {
+        !toggleButton ? setToggleButton(true) : setToggleButton()
+
+        setToggleButton('menu')
+    }
+
 
 
     return <header className=' p-2 text-[#c6d6dd]'>
@@ -18,38 +25,38 @@ export default function NavBar() {
             {toggleButton === 'close' &&
                 <ul className='flex flex-col mt-4 '>
                     <NavLink to='/' className={({ isActive }) =>
-                        `hover: text-xl ${isActive ? 'text-white text-2xl p-1 transition duration-300 ease-out hover:ease-in' : ''}`}>Sobre mi</NavLink>
+                        `text-xl ${isActive ? ' text-white text-2xl p-1 transition duration-300 ease-out hover:ease-in' : ''}`} onClick={menuOpen}>Sobre mi</NavLink>
 
                     <NavLink to='/educacion' className={({ isActive }) =>
-                        `hover: text-xl ${isActive ? 'text-white text-2xl p-1 transition duration-300 ease-out hover:ease-in' : ''}`}>Educación</NavLink>
+                        `text-xl ${isActive ? 'text-white text-2xl p-1 transition duration-300 ease-out hover:ease-in' : ''}`} onClick={menuOpen}>Educación</NavLink>
 
                     <NavLink to='/proyectos' className={({ isActive }) =>
-                        `hover: text-xl ${isActive ? 'text-white text-2xl  p-1 transition duration-300 ease-out hover:ease-in' : ''}`}>Proyectos</NavLink>
+                        `text-xl ${isActive ? 'text-white text-2xl  p-1 transition duration-300 ease-out hover:ease-in' : ''}`} onClick={menuOpen}>Proyectos</NavLink>
 
                     <NavLink to='/competencias' className={({ isActive }) =>
-                        `hover: text-xl ${isActive ? 'text-white text-2xl p-1 transition duration-300 ease-out hover:ease-in' : ''}`}>Competencias</NavLink>
+                        `text-xl ${isActive ? 'text-white text-2xl p-1 transition duration-300 ease-out hover:ease-in' : ''}`} onClick={menuOpen}>Competencias</NavLink>
 
                     <NavLink to='/experiencia' className={({ isActive }) =>
-                        `hover: text-xl ${isActive ? 'text-white text-2xl p-1 transition duration-300 ease-out hover:ease-in' : ''}`}>Experiencia</NavLink>
+                        `text-xl ${isActive ? 'text-white text-2xl p-1 transition duration-300 ease-out hover:ease-in' : ''}`} onClick={menuOpen}>Experiencia</NavLink>
                 </ul>}
         </nav>
         <div className='md:flex md:flex-wrap md:items-center md:justify-around md:mx-auto'>
-            <nav className='hidden md:flex md:flex-col md:mt-4 md:w-full' id='navbar-hamburger'>
-                <ul className='flex justify-around'>
+            <nav className='hidden md:flex md:flex-col md:mt-4 md:w-full mb-10'>
+                <ul className='flex justify-around '>
                     <NavLink to='/' className={({ isActive }) =>
-                        `text-2xl ${isActive ? 'text-white text-2xl border-white border-b-2 p-1 transition duration-300 ease-out hover:ease-in' : ''}`}>Sobre mi</NavLink>
+                        `hover:-translate-y-1 hover:scale-110 text-xl ${isActive ? 'text-white text-2xl border-white border-b-2 transition duration-300 ease-in-out' : ''}`}>Sobre mi</NavLink>
 
                     <NavLink to='/educacion' className={({ isActive }) =>
-                        `text-xl ${isActive ? 'text-white text-2xl border-white border-b-2 p-1 transition duration-300 ease-out hover:ease-in' : ''}`}>Educación</NavLink>
+                        `hover:-translate-y-1 hover:scale-110 text-xl ${isActive ? 'text-white text-2xl border-white border-b-2 transition duration-300 ease-in-out' : ''}`}>Educación</NavLink>
 
                     <NavLink to='/proyectos' className={({ isActive }) =>
-                        `text-xl ${isActive ? 'text-white text-2xl  border-white border-b-2 p-1 transition duration-300 ease-out hover:ease-in' : ''}`}>Proyectos</NavLink>
+                        `hover:-translate-y-1 hover:scale-110 text-xl ${isActive ? 'text-white text-2xl  border-white border-b-2 transition duration-300 ease-in-out' : ''}`}>Proyectos</NavLink>
 
                     <NavLink to='/competencias' className={({ isActive }) =>
-                        `text-xl ${isActive ? 'text-white text-2xl border-white border-b-2 p-1 transition duration-300 ease-out hover:ease-in' : ''}`}>Competencias</NavLink>
+                        `hover:-translate-y-1 hover:scale-110 text-xl ${isActive ? 'text-white text-2xl border-white border-b-2 transition duration-300 ease-in-out' : ''}`}>Competencias</NavLink>
 
                     <NavLink to='/experiencia' className={({ isActive }) =>
-                        `text-xl ${isActive ? 'text-white text-2xl border-white border-b-2  p-1 transition duration-300 ease-out hover:ease-in' : ''}`}>Experiencia</NavLink>
+                        `hover:-translate-y-1 hover:scale-110 text-xl ${isActive ? 'text-white text-2xl border-white border-b-2  transition duration-300 ease-in-out' : ''}`}>Experiencia</NavLink>
                 </ul>
             </nav>
         </div>

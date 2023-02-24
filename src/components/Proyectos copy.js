@@ -1,12 +1,20 @@
-import { FaGithubSquare } from 'react-icons/fa';
-import { LOGO, todoList, blackjack } from '../img';
+import { useState } from 'react';
+// import { FaGithubSquare } from 'react-icons/fa';
+// import { LOGO, todoList, blackjack } from '../img';
+import { dataProjects } from './Data';
+import { ProjectCard } from './ProjectCard';
 
 function Proyectos() {
-
-
-
+    
+    const [projects, setProjects] = useState(dataProjects)
+    // const slicedArray = dataProjects.slice()
+    
+    
     return <main className='flex flex-col items-center w-[100%] p-10 text-[#c6d6dd]'>
-        <div className='flex flex-col items-center md:flex-row border-2 border-[#c6d6dd] rounded-md p-4 m-4 gap-4 w-[75%]'>
+        {projects && <div className='flex flex-col items-center md:flex-row border-2 border-[#c6d6dd] rounded-md p-4 m-4 gap-4 w-[75%]'>
+            {projects.map((props) =>( <ProjectCard {...props} setProjects={setProjects} />))}
+        </div>}
+        {/* <div className='flex flex-col items-center md:flex-row border-2 border-[#c6d6dd] rounded-md p-4 m-4 gap-4 w-[75%]'>
             <div className='flex items-center'>
                 <img src={LOGO} alt='logo' className='h-34' />
             </div>
@@ -47,12 +55,12 @@ function Proyectos() {
                 <p>Tecnologías: HTML5 - CSS3 - JavaScript - React - Tailwind</p>
                 <a href='https://github.com/fede-alejandro/Agenda-tareas' target='_blank' rel='noreferrer' className='pt-2'><FaGithubSquare size='1.5rem' /></a>
             </div>
-        </div>
+        </div> */}
         {/* <div className='flex gap-4'>
             <button className=' border-2 border-blue-400 rounded-md p-2' ><AiOutlineArrowLeft size='1.5rem' /></button>
             <button className=' border-2 border-blue-400 rounded-md p-2' ><AiOutlineArrowRight size='1.5rem' /></button>
         </div> */}
     </main>
-
-}
+    
+    }
 export default Proyectos

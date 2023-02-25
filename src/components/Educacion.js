@@ -3,7 +3,7 @@ import { educacion } from '../img'
 function Educacion() {
 
     return <main className='w-full text-[#c6d6dd]'>
-        <div className='flex flex-col items-center text-center  md:flex-row justify-center gap-10 p-20 w-[100%]'>
+        <div className='flex flex-col items-center text-center  md:flex-row justify-center p-10 w-[100%]'>
             <div className='w-[70%] md:flex h-80 m-auto'>
                 <img src={educacion} alt='avatar' />
             </div>

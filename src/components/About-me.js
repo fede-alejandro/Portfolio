@@ -14,7 +14,7 @@ function AboutMe() {
                     <p>¡Bienvenidos a mi portfolio!. Soy un Desarrollador Full Stack Junior,</p>
                     <p>en constante aprendizaje, descubriendo e incorporando nuevas</p>
                     <p>tecnologías y trabajando día a día para mejorar mis</p>
-                    <p>habilidades dentro de este apasionate mundo.</p>
+                    <p>habilidades dentro de este apasionante mundo.</p>
                     <p>Si bien mi experiencia ha trancurrido dentro de diferentes sectores,</p>
                     <p>siempre he luchado para superarme y alcanzar mis metas, es por eso que decidí</p>
                     <p>focalizarme en formarme como Developer, realizando un Bootcamp con dedicación</p>

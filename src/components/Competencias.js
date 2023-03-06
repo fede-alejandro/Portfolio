@@ -5,8 +5,8 @@ import { skills } from '../img';
 
 function Competencias() {
 
-    return <main className=' text-black font-bold italic w-[100%]'>
-        <div className='flex flex-col justify-center items-center mt-20 md:flex-row gap-20 '>
+    return <main className='flex content-center justify-center text-black font-bold italic w-[100%]'>
+        <div className='flex flex-col justify-center content-center mt-20 md:flex-row gap-20 '>
             <div className='flex justify-center mt-20'>
                 <img src={skills} alt='' className='h-40' />
             </div>

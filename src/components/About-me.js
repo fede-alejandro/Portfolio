@@ -22,6 +22,7 @@ function AboutMe() {
                     <p>Busco una oportunidad para comenzar a volcar mis conocimientos técnicos
                         y seguir evolucionando.</p>
                     <p><strong>Te invito a que navegues por esta web para conocerme un poco mas.</strong></p>
+                    
                     <div className='flex flex-row flex- gap-10 mt-20 flex-wrap'>
                         <span>
                             <a className='flex items-center justify-center gap-4 hover:text-white'

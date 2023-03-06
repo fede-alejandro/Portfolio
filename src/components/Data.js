@@ -1,5 +1,5 @@
 import { FaGithubSquare } from "react-icons/fa";
-import { LOGO, todoList, blackjack } from '../img';
+import { Logo, todoList, blackjack } from '../img';
 
 
 
@@ -9,7 +9,7 @@ export const dataProjects = [
         title: 'COMO LO RECICLO',
         description: 'Una aplicación para que los usuarios donen artículos que ya no utilizan y les den una segunda vida. Al registrarse pueden realizar publicaciones, recibir mensajes de interesados y decidir a quién donarlos.También contiene información sobre reciclaje y un podcasts de Spotify. Tecnologías: HTML5 - CSS3 - JavaScript - React - Node - Express Mongo - Mongoose - Tailwind',
         icons: [<FaGithubSquare size='1.5rem' />],
-        image: LOGO,
+        image: Logo,
         repositorio: 'https://github.com/fede-alejandro/como-lo-reciclo',
 
     },

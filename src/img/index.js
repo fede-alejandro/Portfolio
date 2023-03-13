@@ -1,4 +1,4 @@
-const Logo = require('./Logo.png') 
+const logo = require('./logo.png')
 const avatar = require('./avatar.png')
 const educacion = require('./educacion.png')
 const experiecialaboral = require('./experiencialaboral.png')
@@ -10,7 +10,7 @@ const galeriaImagenes = require('./galeriaImagenes.png')
 const carrito = require('./carrito.jpg')
 
 module.exports = {
-    Logo,
+    logo,
     avatar,
     educacion,
     experiecialaboral,

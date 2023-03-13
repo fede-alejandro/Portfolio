@@ -2,7 +2,7 @@ import { avatar } from '../img'
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 
-function AboutMe() {
+function SobreMi() {
 
 
     return <main className=' h-full w-full p-10 text-[#c6d6dd] flex-wrap'>
@@ -58,4 +58,4 @@ function AboutMe() {
     </main>
 
 }
-export default AboutMe
+export default SobreMi

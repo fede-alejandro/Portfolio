@@ -1,16 +1,14 @@
 import { useState } from 'react';
-// import { FaGithubSquare } from 'react-icons/fa';
-// import { LOGO, todoList, blackjack } from '../img';
-import { dataProjects } from './Data';
-import { ProjectCard } from './ProjectCard';
+import { dataProyectos } from '../data/proyectos';
+import { ProyectoCarta } from './ProyectoCarta';
 
 function Proyectos() {
 
-    const [projects, setProjects] = useState(dataProjects)
+    const [proyectos, setProyectos] = useState(dataProyectos)
     
     return <main className='flex flex-col items-center w-[100%] p-10 text-[#c6d6dd]'>
-        {projects && <div >
-            {projects.map((props) => (<ProjectCard  {...props} setProjects={setProjects} />))}
+        {proyectos && <div >
+            {proyectos.map((proyecto) => (<ProyectoCarta key={proyecto.id}  {...proyecto} setProjects={setProyectos} />))}
         </div>}
 
     </main>

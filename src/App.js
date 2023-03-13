@@ -4,15 +4,16 @@ import Educacion from './components/Educacion';
 import Experiencia from './components/Experiencia';
 import Proyectos from './components/Proyectos';
 import Competencias from './components/Competencias';
-import AboutMe from './components/About-me';
+import SobreMi from './components/Sobre-mi';
 
 
 function App() {
+
   return (
     <>
       <NavBar />
       <Routes>
-        <Route path='/' element={<AboutMe />} />
+        <Route path='/' element={<SobreMi />} />
         <Route path='/educacion' element={<Educacion />} />
         <Route path='/experiencia' element={<Experiencia />} />
         <Route path='/proyectos' element={<Proyectos />} />

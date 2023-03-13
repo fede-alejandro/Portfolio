@@ -19,7 +19,7 @@ function App() {
         <Route path='/proyectos' element={<Proyectos />} />
         <Route path='/competencias' element={<Competencias />} />
       </Routes>
-      {/* <Footer /> */}
+
     </>
   );
 }
